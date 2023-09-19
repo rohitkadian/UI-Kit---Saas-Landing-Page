@@ -295,8 +295,9 @@ nav{
 .question{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
+    margin-top: 100px;
 
 }
 .left{
@@ -305,7 +306,7 @@ nav{
     flex-direction: column;
     padding: 20px;
     margin: 10px;
-    margin-left: 30px;
+    margin-left: 150px;
 }
 
 .left h1{
@@ -337,9 +338,21 @@ nav{
     flex-basis: 50%;
     display: flex;
     align-items: end;  
-    padding: 20px;
+    /* padding: 20px; */
+    margin-left: 100px;
 }
 
 .right-img img{
-    max-width: 50%;
+    max-width: 85%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer-credit p{
+    font-family: 'Inter', sans-serif;
+    color: #e4e4e4;
+    font-size: 20px;
+    justify-content: center;
 }
