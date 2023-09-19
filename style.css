@@ -34,11 +34,20 @@ nav ul{
 
 nav ul li{
     margin-right: 20px;
-   
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 nav ul li:hover{
     text-decoration: underline;
+    
+
 }
 
 nav ul li:first-child{
@@ -111,8 +120,8 @@ nav{
 .hero-image {
     text-align: center;
     margin-left: auto;
-    margin-right: auto; /* Center the image horizontally */
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    margin-right: auto; 
+    max-width: 100%; 
     height: auto;
 }
 
@@ -128,9 +137,8 @@ nav{
     }
 
     .hero-image {
-        /* Remove the margin and adjust the width */
         margin: 0;
-        width: 80%; /* You can adjust the width as needed */
+        width: 80%; 
     }
 }
 
@@ -158,22 +166,22 @@ nav{
 .dash-demo {
     display: flex;
     justify-content: center;
-    margin: 0; /* Remove margin for smaller screens */
+    margin: 0; 
 }
 
 .dash-demo img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-width: 100%; 
     height: auto;
 }
 
 @media (max-width: 768px) {
     .dash-demo {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        align-items: center; /* Center elements horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .dash-demo img {
-        margin: 20px 0; /* Add spacing between the elements */
+        margin: 20px 0; 
     }
 }
 
@@ -242,9 +250,9 @@ nav{
 
 @media (max-width: 768px) {
     .feedback {
-        flex-direction: column; /* Stack elements vertically as columns */
-        align-items: center; /* Center elements horizontally */
-        padding: 10px; /* Reduce padding for smaller screens */
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
     }
 }
 
@@ -288,8 +296,8 @@ nav{
     align-items: center;
     display: flex;
     flex-direction: column;
-    text-align: center; /* Center the text horizontally */
-    margin-bottom: 20px; /* Add some spacing between the heading and feedback elements */
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .question{
@@ -338,7 +346,6 @@ nav{
     flex-basis: 50%;
     display: flex;
     align-items: end;  
-    /* padding: 20px; */
     margin-left: 100px;
 }
 
@@ -355,4 +362,65 @@ nav{
     color: #e4e4e4;
     font-size: 20px;
     justify-content: center;
+}
+
+/* Signup Page & Login Page */
+
+.signup-box{
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    background-color: transparent;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box h1{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    color: #bfaff2;
+    
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #e4e4e4;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+}
+
+form input{
+    width: 400px;
+    height: 30px;
+    padding: 7px;
+    border: none;
+    border: 1px solid #bfaff2;
+    outline: none;
+    border-radius: 20px;
+    
+}
+
+input[type="button"]{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-around;
+    background-color: #bfaff2;
+    color: #e4e4e4;
+    width: 400px;
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
 }
